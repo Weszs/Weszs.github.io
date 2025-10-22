@@ -1,2 +1,2 @@
-# Weszs.github.io
-WebDev | Wesley De Oliveira
+# luarafroes.github.io
+Web Design &amp; Development | Luara Froes

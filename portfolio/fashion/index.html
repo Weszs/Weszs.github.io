@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Fashion Outlet</title>
+  <meta name="description" content="Fashion retail website project — hats, scarves, t-shirts & footwear.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="assets/videos/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Fashion Outlet</h1>
+      <p>Elegance meets modern streetwear.</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-1 dark-bg">
+      <h2>Welcome to Fashion Outlet</h2>
+      <p>Your one-stop shop for the latest in hats, scarves, tees, and footwear.</p>
+    </section>
+
+    <section class="section section-2 light-grey">
+      <h2>Hats Collection</h2>
+      <img src="assets/img/hat.jpg" alt="Hats">
+      <p>Stylish hats for every season.</p>
+    </section>
+
+    <section class="section section-2 light-grey">
+      <h2>Scarves Collection</h2>
+      <img src="assets/img/scarf.jpg" alt="Scarves">
+      <p>Warm and chic scarves to complement any outfit.</p>
+    </section>
+
+    <section class="section section-3 white-bg">
+      <h2>T-Shirts</h2>
+      <img src="assets/img/tshirt.jpg" alt="T-Shirts">
+      <p>Soft fabrics, bold prints.</p>
+    </section>
+
+    <section class="section section-3 white-bg">
+      <h2>Footwear</h2>
+      <img src="assets/img/shoes.jpg" alt="Footwear">
+      <p>Comfortable and trendy shoes.</p>
+    </section>
+
+    <section class="section section-4 testimonials">
+      <div class="testimonial">“Great style, quick delivery!”</div>
+      <div class="testimonial">“Love the hat collection.”</div>
+      <div class="testimonial">“Scarves are warm and soft.”</div>
+      <div class="testimonial">“Shoes are super comfortable.”</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

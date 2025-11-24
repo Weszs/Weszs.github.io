@@ -1,0 +1,67 @@
+/* Add your custom CSS here */
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+.hero {
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
+}
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+main .section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.dark-bg { background: #2f4f4f; color: #fff; }
+.light-grey { background: #f0f0f0; color: #333; }
+.white-bg { background: #fff; }
+
+.section-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.testimonial {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f8f8f8;
+}

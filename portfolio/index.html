@@ -7,130 +7,132 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
-<body class="bg-gray-950 text-gray-200">
+<body>
 
-  <!-- NAVBAR -->
-  <nav class="bg-black/40 backdrop-blur-md border-b border-gray-800">
-    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <a href="../index.html" class="flex items-center gap-2">
-        <img src="../assets/img/Orange_Logo_Luara_Froes_78337" alt="Logo" class="h-10 w-10 rounded" />
-        <span class="font-semibold text-lg">Wesley De Oliveira</span>
-      </a>
-
-      <ul class="hidden md:flex gap-8 font-medium">
-        <li><a href="../index.html" class="hover:text-orange-400">Home</a></li>
-        <li><a href="#" class="text-orange-400">Portfolio</a></li>
-        <li><a href="../store/index.html" class="hover:text-orange-400">Store</a></li>
-        <li>
-          <a href="../contact/index.html" class="bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600 transition flex items-center gap-2">
-            Contact <i class="fa-regular fa-envelope"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- HEADER -->
-  <header class="text-center py-20">
-    <h1 class="text-5xl font-bold mb-4">Portfolio</h1>
-    <p class="text-lg text-gray-400 max-w-2xl mx-auto">Below you can see a selection of my web design and front-end development projects.</p>
-  </header>
-
-  <!-- PROJECTS GRID -->
-  <main class="max-w-7xl mx-auto px-6 pb-24">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-
-      <!-- Project Card Template -->
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-800">
-        <a href="fashion/index.html">
-          <img src="../assets/img/project-fashion.jpg" class="w-full h-56 object-cover hover:scale-105 transition-transform" />
-        </a>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Snazzy Fashion</h3>
-          <p class="text-gray-400 mb-4">A web page for a fashion retailer with a background video loop.</p>
-          <a href="fashion/index.html" class="inline-flex items-center gap-2 bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">
-            View project <i class="fas fa-arrow-right"></i>
-          </a>
+    <!-- menu and 'hero block' header -->
+    <nav class="theme-dark"><div class="container-menu">
+        <a href="../index.html" class="brand">
+            <img src="..\assets\img\Orange_Logo_Luara_Froes_78337.png" alt="Sample website logo"></a>
+        
+        <div class="container-menu-links">
+        
+        <div class="nav-toggle" id="nav-toggle-btn"><div class="bar-1"></div><div class="bar-2"></div><div class="bar-3"></div></div>
+            <ul class="links-wrapper">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="../store/index.html">Store</a></li>
+                <li><a class="btn btn-solid btn-soft" id="btn-cta" href="../contact/index.html"><span>Contact</span> <i class="fa-regular fa-envelope"></i></a></li>
+            </ul>
+            </div>
         </div>
-      </div>
-
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-800">
-        <a href="../store/index.html">
-          <img src="../assets/img/project-store.png" class="w-full h-56 object-cover hover:scale-105 transition-transform" />
-        </a>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Book Store</h3>
-          <p class="text-gray-400 mb-4">An online book store with affiliate Amazon links.</p>
-          <a href="../store/index.html" class="inline-flex items-center gap-2 bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">View project <i class="fas fa-arrow-right"></i></a>
+    </nav>
+    
+    <header class="theme-dark text-center-mobile">
+        <div class="container-text w-1140px">
+            <h1>Portfolio</h1>
+            <h2>Below you can see a selection of my web design and front-end development projects.</h2>
         </div>
-      </div>
+        
+    </header><!-- header ends here -->
+        
+        
+    <!-- main content with sections -->
+    <main>
 
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-800">
-        <a href="crypto-wallet/index.html">
-          <img src="../assets/img/project-crypto-wallet.jpg" class="w-full h-56 object-cover hover:scale-105 transition-transform" />
-        </a>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Crypto Wallet</h3>
-          <p class="text-gray-400 mb-4">A dark responsive single‑page website for a fictional crypto wallet.</p>
-          <a href="crypto-wallet/index.html" class="inline-flex items-center gap-2 bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+	<!-- section starts here -->
+	<section class="theme-dark section-selector-1 w-1356px">
 
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-800">
-        <a href="project-hero/index-1.html">
-          <img src="../assets/img/project-hero.png" class="w-full h-56 object-cover hover:scale-105 transition-transform" />
-        </a>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Project Hero</h3>
-          <p class="text-gray-400 mb-4">A gallery of split‑screen hero blocks and duotone designs.</p>
-          <a href="project-hero/index-1.html" class="inline-flex items-center gap-2 bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+		<!-- Begin three-column flexbox grid -->
+		<div class="flex-cols-3">
 
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-800">
-        <a href="project-multi-column/index.html">
-          <img src="../assets/img/project-multi-col.png" class="w-full h-56 object-cover hover:scale-105 transition-transform" />
-        </a>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Project Multi‑column</h3>
-          <p class="text-gray-400 mb-4">A gallery of flexible multi‑column responsive layouts.</p>
-          <a href="project-multi-column/index.html" class="inline-flex items-center gap-2 bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="fashion/index.html"><img src="../assets/img/project-fashion.jpg" alt="Snazzy Fashion"></a>
+				</figure>
+				<h3>Snazzy Fashion</h3>
+				<p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+				<a href="fashion/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
 
-      <div class="bg-gray-900 rounded-2xl shadow-xl overflow-hidden border border-gray-800">
-        <a href="smoothies/index.html">
-          <img src="../assets/img/smoothies-hero-image.jpg" class="w-full h-56 object-cover hover:scale-105 transition-transform" />
-        </a>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Smoothies</h3>
-          <p class="text-gray-400 mb-4">A flexbox multi‑column layout with a tinted hero overlay.</p>
-          <a href="smoothies/index.html" class="inline-flex items-center gap-2 bg-orange-500 px-4 py-2 rounded-lg hover:bg-orange-600">View project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
+			<div class="col-3">
+                <figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+                    <a href="../store/index.html"><img src="../assets/img/project-store.png" alt="Amazon store"></a>
+                </figure>
+                <h3>Book Store</h3>
+                <p>An online book store with affiliates link to Amazon.</p>
+                <a href="../store/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
 
-    </div>
-  </main>
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="crypto-wallet/index.html"><img src="../assets/img/project-crypto-wallet.jpg" alt="Crypto Wallet"></a>
+				</figure>
+				<h3>Crypto Wallet</h3>
+				<p> A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
+				<a href="crypto-wallet/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
 
-  <!-- FOOTER -->
-  <footer class="text-center py-16 border-t border-gray-800">
-    <h2 class="text-3xl font-bold">Wesley De Oliveira</h2>
-    <h3 class="text-gray-400 mt-2">Front-end designer & development student</h3>
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="project-hero/index-1.html"><img src="../assets/img/project-hero.png" alt="Project Hero"></a>
+				</figure>
+				<h3>Project Hero</h3>
+				<p>A gallery of hero block elements with split-screen layouts and duotone images.</p>
+				<a href="project-hero/index-1.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
 
-    <ul class="flex justify-center gap-8 mt-6 text-lg">
-      <li><a href="../index.html" class="hover:text-orange-400">Home</a></li>
-      <li><a href="#" class="text-orange-400">Portfolio</a></li>
-      <li><a href="../store/index.html" class="hover:text-orange-400">Store</a></li>
-      <li><a href="../contact/index.html" class="hover:text-orange-400">Contact</a></li>
-    </ul>
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="project-multi-column/index.html"><img src="../assets/img/project-multi-col.png" alt="Project Multi-column"></a>
+				</figure>
+				<h3>Project Multi-column</h3>
+				<p>A gallery of multi-column, responsive layouts.</p>
+				<a href="project-multi-column/index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
 
-    <ul class="flex justify-center gap-6 mt-6 text-3xl">
-      <li><a href="#" class="hover:text-orange-400"><i class="fab fa-linkedin"></i></a></li>
-      <li><a href="#" class="hover:text-orange-400"><i class="fab fa-github-square"></i></a></li>
-    </ul>
 
-    <p class="text-gray-500 text-sm mt-6"><a href="#" class="hover:text-orange-400">Privacy & Legal</a></p>
-  </footer>
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness" style="overflow: hidden;">
+					<a href="smoothies\index.html"><img src="../assets/img/smoothies-hero-image.jpg" alt="Placeholder image"></a>
+				</figure>
+				<h3>Smoothies</h3>
+				<p>A multi-column, flexbox-based page lavout and hero image with a tinted overlay.</p>
+				<a href="smoothies\index.html" class="btn btn-solid btn-soft"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+
+		</div> <!-- End three-column flexbox grid -->
+	</section><!-- section ends here -->
+   
+   
+    </main>
+
+    <!-- footer -->
+ 
+	<footer class="theme-dark text-center-desktop text-center-mobile">
+
+		<h2>Luara Froes</h2>
+
+		<h3>Front-end designer and developer student</h3>
+
+		<ul class="footer-links">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="../store/index.html">Store</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+		</ul>
+
+		<ul class="footer-icons">
+			<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+			<li><a href="https://github.com/Weszs" target="_blank"><i class="fab fa-github-square"></i></a></li>
+		</ul>
+
+		<p class="privacy"><a href="privacy.html">Privacy &amp; Legal</a></p>
+
+	</footer>
+
+    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
 
 </body>
 </html>
+

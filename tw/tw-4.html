@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Eight of the Best Cities to Visit in Europe</title>
+  <meta name="description" content="Discover eight of Europe's most iconic cities — from romantic Paris to historic Rome. Find travel inspiration, hidden gems, and unforgettable destinations for your next European adventure.">
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .heading-font {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .city-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .city-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, #4F46E5 0%, #7E22CE 100%);
+    }
+    
+    .nav-link {
+      position: relative;
+    }
+    
+    .nav-link:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -5px;
+      left: 0;
+      background-color: #4F46E5;
+      transition: width 0.3s ease;
+    }
+    
+    .nav-link:hover:after {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center">
+        <div class="flex items-center">
+          <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-3">
+            <i class="fas fa-map-marked-alt text-white text-lg"></i>
+          </div>
+          <span class="text-xl font-bold heading-font text-gray-800">EuroVista</span>
+        </div>
+        
+        <div class="hidden md:flex ml-12 space-x-8">
+          <a href="#" class="nav-link font-medium text-gray-700 hover:text-indigo-600 transition">Destinations</a>
+          <a href="#" class="nav-link font-medium text-gray-700 hover:text-indigo-600 transition">Travel Guides</a>
+          <a href="#" class="nav-link font-medium text-gray-700 hover:text-indigo-600 transition">Itineraries</a>
+          <a href="#" class="nav-link font-medium text-gray-700 hover:text-indigo-600 transition">About</a>
+        </div>
+      </div>
+      
+      <div class="flex items-center space-x-4">
+        <button class="hidden md:block px-4 py-2 text-gray-700 font-medium hover:text-indigo-600 transition">
+          Sign In
+        </button>
+        <button class="px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition shadow-md">
+          Plan Trip
+        </button>
+        
+        <!-- Mobile menu button -->
+        <button class="md:hidden text-gray-700 focus:outline-none">
+          <i class="fas fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient text-white">
+    <div class="container mx-auto px-6 py-16 lg:py-24">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-12 lg:mb-0">
+          <div class="max-w-lg">
+            <h1 class="text-4xl lg:text-5xl font-bold heading-font mb-6">Discover Europe's Most Enchanting Cities</h1>
+            <p class="text-lg text-indigo-100 mb-8">From romantic Paris to historic Rome, explore eight iconic destinations that will inspire your next European adventure.</p>
+            
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+              <button class="px-6 py-3 bg-white text-indigo-700 font-semibold rounded-lg hover:bg-gray-100 transition shadow-lg flex items-center justify-center">
+                <i class="fas fa-map-marked-alt mr-2"></i>
+                Explore Destinations
+              </button>
+              <button class="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-indigo-700 transition flex items-center justify-center">
+                <i class="fas fa-calendar-alt mr-2"></i>
+                Create Itinerary
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lg:w-1/2 flex justify-center">
+          <div class="relative">
+            <div class="w-full max-w-md h-80 bg-white rounded-xl shadow-2xl overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="European city skyline" class="w-full h-full object-cover">
+            </div>
+            <div class="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 w-56">
+              <div class="flex items-center">
+                <div class="w-12 h-12 rounded-full bg-yellow-100 flex items-center justify-center mr-3">
+                  <i class="fas fa-star text-yellow-500"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-800">8 Amazing Cities</p>
+                  <p class="text-sm text-gray-600">Curated by travel experts</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold heading-font mb-4">Why Explore European Cities?</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Each city offers a unique blend of history, culture, and unforgettable experiences that will leave you with memories to last a lifetime.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-4">
+            <i class="fas fa-landmark text-blue-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Rich History</h3>
+          <p class="text-gray-600">Explore centuries of history through iconic landmarks, museums, and architecture that tell the story of Europe.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-4">
+            <i class="fas fa-utensils text-green-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Culinary Delights</h3>
+          <p class="text-gray-600">Savor authentic local cuisine, from French pastries to Italian pasta and Spanish tapas.</p>
+        </div>
+        
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center mb-4">
+            <i class="fas fa-theater-masks text-purple-600 text-xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Vibrant Culture</h3>
+          <p class="text-gray-600">Immerse yourself in diverse cultural experiences, from art galleries to music festivals and local traditions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cities Grid Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold heading-font mb-4">Must-Visit European Cities</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Discover our curated selection of Europe's most captivating urban destinations, each with its own unique charm and attractions.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Paris -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1502602898536-47ad22581b52?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Paris" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Paris</h3>
+              <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">France</span>
+            </div>
+            <p class="text-gray-600 mb-4">The City of Light radiates elegance and romance with its iconic landmarks and artistic atmosphere.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Rome -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Rome" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Rome</h3>
+              <span class="bg-amber-100 text-amber-800 text-xs font-medium px-2.5 py-0.5 rounded">Italy</span>
+            </div>
+            <p class="text-gray-600 mb-4">The Eternal City blends ancient history with modern life, offering a journey through time.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Barcelona -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1583422409516-2895a77efded?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Barcelona" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Barcelona</h3>
+              <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">Spain</span>
+            </div>
+            <p class="text-gray-600 mb-4">A vibrant city with unique architecture, beautiful beaches, and a lively cultural scene.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Amsterdam -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1534351590666-13e3e96b5017?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Amsterdam" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Amsterdam</h3>
+              <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Netherlands</span>
+            </div>
+            <p class="text-gray-600 mb-4">Famous for its picturesque canals, historic houses, and world-class museums.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Prague -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1519677100203-a0e668c92439?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Prague" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Prague</h3>
+              <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Czech Republic</span>
+            </div>
+            <p class="text-gray-600 mb-4">A fairy-tale city with a stunning castle, charming bridges, and historic town square.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Vienna -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516550893923-42d28e5677af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Vienna" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Vienna</h3>
+              <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Austria</span>
+            </div>
+            <p class="text-gray-600 mb-4">A city of imperial palaces, classical music, and elegant coffee house culture.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- London -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="London" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">London</h3>
+              <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">United Kingdom</span>
+            </div>
+            <p class="text-gray-600 mb-4">A dynamic metropolis where history meets modernity, with world-class attractions.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Budapest -->
+        <div class="city-card bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551867633-194f125bddfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Budapest" class="w-full h-full object-cover transition duration-500 hover:scale-105">
+          </div>
+          <div class="p-5">
+            <div class="flex justify-between items-start mb-3">
+              <h3 class="text-xl font-bold heading-font">Budapest</h3>
+              <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">Hungary</span>
+            </div>
+            <p class="text-gray-600 mb-4">The Pearl of the Danube, famous for its thermal baths and stunning architecture.</p>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center text-yellow-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center">
+                Explore <i class="fas fa-arrow-right ml-1 text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <button class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition shadow-md">
+          View All Destinations
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl shadow-xl p-8 md:p-12">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-2/3 mb-6 md:mb-0">
+            <h2 class="text-2xl md:text-3xl font-bold heading-font text-white mb-2">Get Travel Inspiration</h2>
+            <p class="text-indigo-100">Subscribe to our newsletter for exclusive travel tips, destination guides, and special offers.</p>
+          </div>
+          <div class="md:w-1/3 w-full">
+            <div class="flex">
+              <input type="email" placeholder="Your email" class="px-4 py-3 w-full rounded-l-lg focus:outline-none">
+              <button class="bg-indigo-800 text-white px-4 rounded-r-lg font-medium hover:bg-indigo-900 transition">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-3">
+              <i class="fas fa-map-marked-alt text-white text-lg"></i>
+            </div>
+            <span class="text-xl font-bold heading-font">EuroVista</span>
+          </div>
+          <p class="text-gray-400 mb-4">Discover the beauty and diversity of European cities with our curated travel guides and recommendations.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Destinations</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Paris, France</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Rome, Italy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Barcelona, Spain</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Amsterdam, Netherlands</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Resources</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Travel Guides</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Itineraries</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Travel Tips</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition">Best Time to Visit</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-bold mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center text-gray-400">
+              <i class="fas fa-envelope mr-2"></i> hello@eurovista.com
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="fas fa-phone mr-2"></i> +1 (555) 123-4567
+            </li>
+            <li class="flex items-center text-gray-400">
+              <i class="fas fa-map-marker-alt mr-2"></i> London, UK
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <p>© 2023 EuroVista. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -149,3 +149,20 @@ a { color: rgb(188, 22, 22); }
     
 }
 
+/* ===============================
+   LOGO NAVBAR
+================================ */
+
+nav .brand img {
+    height: 42px;        /* tamanho ideal para navbar */
+    width: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* leve efeito no hover */
+nav .brand img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 0 6px rgba(120,160,255,0.6));
+}
+
+

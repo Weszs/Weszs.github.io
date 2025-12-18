@@ -1,14 +1,113 @@
+/* ===============================
+   HEADER DARK THEME STYLING
+================================ */
 
-nav.theme-dark, nav.theme-dark ul.links-wrapper.active { background-color: #060606 }
+/* Background header */
+header.theme-dark {
+    background-color: #060606; /* fundo escuro */
+}
 
-header.theme-dark   { background-color: #060606 }
+/* Badge "WELCOME" */
+header .col-text .badge {
+    background-color: #0ff;  /* ciano neon */
+    color: #060606;           /* texto escuro para contraste */
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 6px 14px;
+    display: inline-block;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
 
-header.theme-dark  h1 { color: var(--red-500); }
+/* Name - "Wesley de Oliveira" */
+header .col-text h1 {
+    color: #ffffff !important;  /* branco puro para contraste */
+    font-size: 3rem;
+    margin: 0.2em 0 0.3em;
+}
 
-section.theme-dark   { background-color: #060606 }
+/* Subtitle / description */
+header .col-text h2 {
+    color: #aef;  /* azul claro suave */
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
 
-footer.theme-dark   { background-color: #060606 }
+/* Container buttons */
+header .col-text .container-btn {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+/* Botões combinando neon (mesma linha e estilo) */
+.btn-solid-dark,
+.btn-innovative {
+    position: relative;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+    color: #060606;           /* texto escuro */
+    background-color: #0ff;    /* ciano neon */
+    border: 2px solid #0ff;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for both buttons */
+.btn-solid-dark:hover,
+.btn-innovative:hover {
+    color: #0ff;             /* texto neon */
+    background-color: #060606; /* fundo escuro */
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* Icon inside buttons */
+.btn-solid-dark i,
+.btn-innovative i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Bounce effect for hover icon */
+.btn-solid-dark:hover i,
+.btn-innovative:hover i {
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+
+/* Button shimmer effect */
+.btn-solid-dark::before,
+.btn-innovative::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(0,255,255,0.2), rgba(0,255,255,0.5), rgba(0,255,255,0.2));
+    transform: skewX(-25deg);
+    transition: all 0.5s ease;
+}
+
+.btn-solid-dark:hover::before,
+.btn-innovative:hover::before {
+    left: 100%;
+}
 
 
-
-header .col-text h2, .col-1 > h3 { line-height: 1.8 }
+nav .brand img {
+    max-height: 100px;
+    width: auto;
+}
